@@ -8,7 +8,7 @@ Saim Nadeem
 Cecilie Hermansen
 
 CodeJam 2023:
-Application name: "Leg med dyr!"
+Application name: "Spil med dyr!"
 
 Denne application har 4 minispil lavet til små børn:
 - 1 minispil: "Bevægelse" -  Bevæge telefon mod højre eller ventre, og hvalen ville bevæge sig i den retningen.
