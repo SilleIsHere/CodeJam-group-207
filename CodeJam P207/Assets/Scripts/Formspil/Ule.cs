@@ -14,6 +14,8 @@ public class Ule : MonoBehaviour
 
     public static bool locked; //A boolean which comes true when the ule is dropped at the correct place (gameobject)
 
+    [SerializeField] private AudioSource effects;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -91,6 +93,7 @@ public class Ule : MonoBehaviour
         {
             transform.position = new Vector2(ulePlace.position.x, ulePlace.position.y);
             locked = true;
+            effects.Play();
         }
 
         //If the left mouse button is released when the animal isn't close enough to its correct place to be dropped, then the animal gameobject retrun to its initial position

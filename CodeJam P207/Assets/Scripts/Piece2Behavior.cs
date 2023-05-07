@@ -12,7 +12,9 @@ public class Piece2Behavior : MonoBehaviour
     private float deltaX, deltaY;
 
     public static bool locked;
-    
+
+    [SerializeField] private AudioSource effects;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -80,6 +82,7 @@ public class Piece2Behavior : MonoBehaviour
         {
             transform.position = new Vector2(piece2Place.position.x, piece2Place.position.y);
             locked = true;
+            effects.Play();
         }
         else
         {
